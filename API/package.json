@@ -1,0 +1,32 @@
+{
+  "name": "nexus-license",
+  "version": "1.0.0",
+  "description": "License verification API + web panel for selling FiveM scripts.",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "vite build && node src/server.js",
+    "dev": "vite build && node --watch src/server.js",
+    "serve": "node src/server.js",
+    "build": "vite build",
+    "web": "vite",
+    "migrate": "node src/tools/cli.js migrate",
+    "cli": "node src/tools/cli.js",
+    "selftest": "node src/lib/crypto.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mariadb": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.2.0",
+    "vue": "^3.4.21"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
